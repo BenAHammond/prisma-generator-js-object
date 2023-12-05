@@ -1,6 +1,5 @@
 generator custom_generator {
   provider = "node ../../node_modules/prisma-generator-js-object"
-  output   = "../types"
 }
 
 datasource db {
