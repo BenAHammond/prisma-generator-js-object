@@ -20,7 +20,7 @@ generatorHandler({
       options.generator.output?.value!,
       `index.js`,
     );
-    const content = `const schema = ${JSON.stringify(options.dmmf.datamodel)}; export default schema;`
+    const content = `const schema = ${JSON.stringify(options.dmmf.datamodel, null, 2)}; export default schema;`
     await writeFileSafely(writeLocation, content);
   },
 });
